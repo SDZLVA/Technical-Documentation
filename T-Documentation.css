@@ -1,1 +1,8 @@
-h1{}
+body {
+    font-size: 10px;
+}
+
+header {
+    font-size: 20px;
+    color: hsl(0, 91%, 46%);
+}
