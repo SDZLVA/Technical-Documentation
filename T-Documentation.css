@@ -1,8 +1,97 @@
+/* styles.css */
+
 body {
-    font-size: 10px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
 }
 
-header {
-    font-size: 20px;
-    color: hsl(0, 91%, 46%);
+#title {
+    text-align: center;
+    margin-top: 50px;
+    color: #3366cc; /* Blue title */
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+    color: #555; /* Dark gray description */
+}
+
+#color {
+    color: #3366cc; /* Blue span */
+}
+
+#survey-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #3366cc; /* Blue border on focus */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3366cc; /* Blue submit button */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #2554a7; /* Darker blue on hover */
+}
+
+#radio,
+#18years,
+#Disable {
+    margin-top: 10px;
+    color: #333; /* Dark gray labels */
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for textarea */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3366cc; /* Blue border on focus */
 }
