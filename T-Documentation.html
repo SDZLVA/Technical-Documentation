@@ -3,78 +3,63 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Technical Documentation</title>
-    <link rel="stylesheet" href="T-Documentation.css">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <main id="main-doc">
-        <nav id="navbar">
-            <header>
-                <h1>Technical Documentation</h1>
-            </header>
-            <a href="#html" class="nav-link">HTML</a>
-            <a href="#css" class="nav-link">CSS</a>
-            <a href="#js" class="nav-link">JS</a>
-            <a href="#python" class="nav-link">PYTHON</a>
-            <a href="#c++" class="nav-link">C++</a>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+        This is a survey form project from <span id="color">freecodecamp.org</span>
+    </p>
 
-        </nav>
-
-        <section class="main-section" id="html">
-            <header>Html</header>
-
-
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-
-        </section>
-        <section class="main-section" id="css">
-            <header>CSS</header>
-
-
-            <code>b</code>
-            <code>b</code>
-            <code>b</code>
-            <code>b</code>
-            <code>b</code>
-
-        </section>
-        <section class="main-section" id="js">
-            <header>JS</header>
-
-
-            <li>c</li>
-            <li>c</li>
-            <li>c</li>
-            <li>c</li>
-            <li>c</li>
-
-
-        </section>
-        <section class="main-section" id="python">
-            <header>Python</header>
-
-
-        </section>
-        <section class="main-section" id="c++">
-            <header>C++</header>
-
-
-        </section>
+    <form id="survey-form" action="Survey Form.html" method="post">
+        <label id="name-label">Enter Your Name</label>
+        <input id="name" type="text" name="email" placeholder="Jhon Wick" required>
+        <br>
+        <br>
+        <label id="email-label">Enter Your Email</label>
+        <input id="email" type="email" name="email" placeholder="jhonewick@yourmail.com" required>
+        <br>
+        <br>
+        <label id="number-label">Enter Your Phone Number</label>
+        <input id="number" type="number" max="10000000000000" min="1000000000" placeholder="00393278922657">
+        <br>
+        <br>
+        <label for="dropdown">Gender</label>
+        <select id="dropdown">
+            <option value="Male">Male</option>
+            <option value="female">Female</option>
+            <option value="not-to-say">Prefer Not To Say</option>
+        </select>
+        <br>
+        <br>
+        <label id="radio">Are You Married</label>
+        <input type="radio" name="Mstatus" value="yes">Yes
+        <input type="radio" name="Mstatus" value="no">No
+        <input type="radio" name="Mstatus" value="other">Other
+        <br>
+        <br>
+        <label id="18years">Are You Over 18 Years Old</label>
+        <input type="checkbox" name="age" value="yes">Yes
+        <br>
+        <br>
+        <label id="Disable">Dou you Have Any Disabilities</label>
+        <input type="checkbox" name="Disabilities" value="yes">Yes
+        <br>
+        <br>
+        <label id="description">Write Us</label>
+        <textarea>Write Us</textarea>
+        <br>
+        <br>
+        <input id="submit" type="submit" value="submit">
 
 
 
-    </main>
+
+
+    </form>
+
 </body>
 
 </html>
